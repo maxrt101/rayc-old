@@ -1,0 +1,10 @@
+#ifndef _RAYC_VERSION_H_
+#define _RAYC_VERSION_H_ 1
+
+#define RAYC_VERSION_MAJOR 0
+#define RAYC_VERSION_MINOR 1
+#define RAYC_VERSION_PATCH 0
+
+#define RAYC_VERSION_STRING "0.1.0"
+
+#endif /* _RAYC_VERSION_H_ */
