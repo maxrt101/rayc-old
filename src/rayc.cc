@@ -48,8 +48,8 @@ struct Raycaster {
 
   // float fov = M_PI / 6.0f; // 600x600 - 0.5
   // float fov = M_PI / 4.8f; // 800x600 - 0.7
-  // float fov = M_PI / 3.66f; // 1000x600 - 0.85
-  float fov = M_PI / 3.14f; // 1200x600 - 1
+  float fov = M_PI / 3.66f; // 1000x600 - 0.85
+  // float fov = M_PI / 3.14f; // 1200x600 - 1
   float depth = 30.0f;
 
   float step = 0.01f;
@@ -250,7 +250,7 @@ void Raycaster::onConsoleCommand(std::string line) {
   }
 }
 
-DDAResult Raycaster::castRay(Vec2d src, Vec2d direction) {
+Raycaster::DDAResult Raycaster::castRay(Vec2d src, Vec2d direction) {
   Raycaster::DDAResult result;
 
   Vec2d rayDelta = {
